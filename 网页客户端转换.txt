@@ -1,0 +1,27 @@
+网页端：
+注释掉这个函数
+initClientParams () {
+    const path = require('path')
+    const fs = window.require('fs')
+    // 获取配置信息
+    let configFilePath = ''
+    if (__dirname.indexOf('node_modules') > 0) {
+    configFilePath = __dirname.substring(0, __dirname.indexOf('node_modules'))
+    } else {
+    configFilePath = __dirname.substring(0, __dirname.indexOf('resources'))
+    }
+    configFilePath = path.join(configFilePath, 'config.json')
+    const that = this
+    fs.readFile(configFilePath, 'utf-8', function (err, data) {
+    if (err) {
+        console.log(err)// eslint-disable-line
+    } else {
+        that.configData = JSON.parse(data)
+        that.initParams()
+    }
+    })
+},
+客户端编译再打开
+2.参数配置文件
+    -- 网页端：open_park\public\config.json
+    -- 客户端：open_park\config.json

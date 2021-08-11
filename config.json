@@ -1,0 +1,12 @@
+{
+    "net" : {
+        "ip": "127.0.0.1",
+        "port": 9000,
+        "imgPort": 8080,
+        "comment":"配置openpark服务的内网地址和端口"
+    },
+    "sysConfig" : {
+        "isShowSmFree": false,
+        "comment":"配置为true首页监控驶离tab会显示免除费用多选框"
+    }
+}

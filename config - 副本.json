@@ -1,0 +1,197 @@
+{
+    "net" : {
+        "ip": "127.0.0.1",
+        "port": 9000,
+        "comment":"配置openpark服务的内网地址和端口"
+    },
+    "sysConfig" : {
+        "isShowSmFree": true,
+        "comment":"配置为true首页监控驶离tab会显示免除费用多选框"
+    },
+    "menu" : {
+        "home": {
+            "name": "首页",
+            "show": true,
+            "index": "/home",
+            "type": "menuItem",
+            "class": "iconfont iconfont2 iconhtmal5icon10"
+        },
+        "cxtj":{
+            "name": "查询统计",
+            "show": true,
+            "index": "2",
+            "type": "subMenu",
+            "class": "iconfont iconfont3 iconchaxuntongji",
+            "children": [
+                {
+                    "name": "订单查询",
+                    "show": true,
+                    "index":"/order",
+                    "class":"iconfont iconfont1 iconchaxun"
+                },
+                {
+                    "name": "出入记录",
+                    "show": true,
+                    "index":"/detect",
+                    "class":"iconfont iconfont1 iconjilu"
+                },
+                {
+                    "name": "支付记录",
+                    "show": true,
+                    "index":"/orderpay",
+                    "class":"iconfont iconfont1 iconzhangdan"
+                },
+                {
+                    "name": "场内车删除记录",
+                    "show": false,
+                    "index":"/carsdel",
+                    "class":"iconfont iconfont1 iconcheliang-"
+                },
+                {
+                    "name": "抬杆记录",
+                    "show": false,
+                    "index":"/manaul",
+                    "class":"iconfont iconfont1 iconyichang"
+                },
+                {
+                    "name": "免费放行记录",
+                    "show": false,
+                    "index":"/freego",
+                    "class":"iconfont iconfont1 iconfree"
+                },
+                {
+                    "name": "统计信息",
+                    "show": false,
+                    "index":"/statistics",
+                    "class":"iconfont iconfont1 icontongji"
+                }
+            ]
+        },
+        "tccsz":{
+            "name": "停车场设置",
+            "show": true,
+            "index": "3",
+            "type": "subMenu",
+            "class": "iconfont iconfont1 iconpeizhi",
+            "children": [
+                {
+                    "name": "停车场信息",
+                    "show": true,
+                    "index":"/park",
+                    "class":"iconfont iconfont1 icontingchechang"
+                },
+                {
+                    "name": "参数配置",
+                    "show": false,
+                    "index":"/sysconfig",
+                    "class":"iconfont iconfont1 iconcanshu"
+                },
+                {
+                    "name": "特色配置",
+                    "show": false,
+                    "index":"/featureconf",
+                    "class":"iconfont iconfont1 iconpeizhiguanli"
+                },
+                {
+                    "name": "区域管理",
+                    "show": true,
+                    "index":"/region",
+                    "class":"iconfont iconfont1 iconquyu"
+                },
+                {
+                    "name": "出入口管理",
+                    "show": false,
+                    "index":"/gate",
+                    "class":"iconfont iconfont1 iconinlet-and-outlet"
+                },
+                {
+                    "name": "相机管理",
+                    "show": false,
+                    "index":"/equip",
+                    "class":"iconfont iconfont1 iconxiangji"
+                }
+            ]
+        },
+        "tccgl":{
+            "name": "停车场管理",
+            "show": true,
+            "index": "4",
+            "type": "subMenu",
+            "class": "iconfont iconfont1 icontianchongxing-",
+            "children": [
+                {
+                    "name": "本地会员",
+                    "show": true,
+                    "index":"/leaguer",
+                    "class":"iconfont iconfont1 iconvip"
+                },
+                {
+                    "name": "黑名单管理",
+                    "show": true,
+                    "index":"/black",
+                    "class":"iconfont iconfont1 iconheimingdan"
+                },
+                {
+                    "name": "异常车辆管理",
+                    "show": true,
+                    "index":"/abnormal",
+                    "class":"iconfont iconfont1 iconyichang-1"
+                },
+                {
+                    "name": "场内车管理",
+                    "show": true,
+                    "index":"/cars",
+                    "class":"iconfont iconfont1 iconcheliang-"
+                }
+            ]
+        },
+        "yhjs":{
+            "name": "用户角色管理",
+            "show": true,
+            "index": "5",
+            "type": "subMenu",
+            "class": "iconfont iconfont1 iconyonghuquanxian",
+            "children": [
+                {
+                    "name": "用户管理",
+                    "show": false,
+                    "index":"/user",
+                    "class":"iconfont iconfont1 iconguanliyuan"
+                },
+                {
+                    "name": "角色管理",
+                    "show": false,
+                    "index":"/role",
+                    "class":"iconfont iconfont1 iconjiaoseguanli_huaban1"
+                }
+            ]
+        },
+        "jfgl":{
+            "name": "计费管理",
+            "show": false,
+            "index": "6",
+            "type": "subMenu",
+            "class": "iconfont iconfont2 iconshoufeiguanli",
+            "children": [
+                {
+                    "name": "计费规则",
+                    "show": false,
+                    "index":"/rule",
+                    "class":"iconfont iconfont1 iconguizeguanli"
+                },
+                {
+                    "name": "计费方案",
+                    "show": false,
+                    "index":"/scheme",
+                    "class":"iconfont iconfont1 iconwj-fa"
+                },
+                {
+                    "name": "计费测试",
+                    "show": false,
+                    "index":"/chargetest",
+                    "class":"iconfont iconfont1 iconceshi"
+                }
+            ]
+        }
+    }
+}
