@@ -259,8 +259,9 @@ export default {
         }
         const days = getNumberOfDays(this.start, this.end)
         // console.log(days)
-        if (days > 1) {
-          return this.$message.error('驶入日期起止时间差不能超过一天')
+        const intervalDays = this.$store.state.sysConfig.intervalDays
+        if (days > intervalDays) {
+          return this.$message.error('驶入日期起止时间差不能超过' + intervalDays + '天')
         }
       }
 

@@ -7,6 +7,7 @@
     },
     "sysConfig" : {
         "isShowSmFree": false,
-        "comment":"配置为true首页监控驶离tab会显示免除费用多选框"
+        "comment":"配置为true首页监控驶离tab会显示免除费用多选框",
+        "intervalDays": 5
     }
 }
