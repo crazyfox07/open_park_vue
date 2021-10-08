@@ -36,6 +36,9 @@ Axios.interceptors.request.use(config => {
   return config
 })
 Axios.interceptors.response.use(config => {
+  if (config.data.code === '101') {
+    router.push('/login')
+  }
   return config
 })
 Vue.prototype.$http = Axios

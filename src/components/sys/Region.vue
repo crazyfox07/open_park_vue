@@ -11,7 +11,7 @@
       <el-table border stripe :data="dataList">
         <el-table-column type="index"></el-table-column>
         <el-table-column label="区域名称" prop="regionName"></el-table-column>
-        <el-table-column label="计费方案" prop="regionName"></el-table-column>
+        <el-table-column label="计费方案" prop="chargeSchemeNid"></el-table-column>
         <el-table-column label="车位数" prop="berthCount"></el-table-column>
         <el-table-column label="剩余车位数" prop="regionRectifyCount"></el-table-column>
         <el-table-column label="区域类型">
