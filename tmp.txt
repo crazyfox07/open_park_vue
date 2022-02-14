@@ -1,0 +1,1 @@
+docker run -itd --net=host --name -v /etc/localtime:/etc/localtime -v /root/openpark-service1:/root/openpark-service -v /root/data1/Tmp_Ehcache:/root/data/Tmp_Ehcache -v /var/FileUpload:/var/FileUpload  cjkang/java1.8:latest
