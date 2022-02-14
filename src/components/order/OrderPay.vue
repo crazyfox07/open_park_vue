@@ -19,6 +19,7 @@
               <el-option label="微信" value="1205"></el-option>
               <el-option label="现金支付" value="1206"></el-option>
               <el-option label="ETC支付" value="1229"></el-option>
+              <el-option label="建行聚合" value="1227"></el-option>
             </el-select>
         </el-col>
         <el-col :span="3" v-if="isShowUserDrop">
@@ -56,6 +57,7 @@
             <span v-else-if="scope.row.payType === '1211'  ">停车卡</span>
             <span v-else-if="scope.row.payType === '1212'  ">公众号支付</span>
             <span v-else-if="scope.row.payType === '1229'  ">ETC支付</span>
+            <span v-else-if="scope.row.payType === '1227'  ">建行聚合</span>
             <span v-else>
               其他
             </span>

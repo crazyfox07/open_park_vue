@@ -117,6 +117,7 @@
             <span v-else-if="scope.row.payType === '1211'  ">停车卡</span>
             <span v-else-if="scope.row.payType === '1212'  ">公众号支付</span>
             <span v-else-if="scope.row.payType === '1229'  ">ETC支付</span>
+            <span v-else-if="scope.row.payType === '1227'  ">建行聚合</span>
             <span v-else>
               其他
             </span>

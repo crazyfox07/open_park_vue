@@ -818,7 +818,7 @@ export default {
       if (this.addForm.maxCharge === '') {
         return this.$message.error('收费限额不能为空')
       }
-      this.item.configTemplate.limitCharge = parseInt(this.addForm.maxCharge)
+      this.item.configTemplate.limitCharge = parseFloat(this.addForm.maxCharge)
 
       // 免费时段
       if (this.mfsdDataTable.length > 0) {

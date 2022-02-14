@@ -180,10 +180,10 @@ export default {
     // 添加窗口关闭
     addDialogClose () {
       this.$refs.addFormRef.resetFields()
-      this.addForm.regionType = '0'
-      this.addForm.parentRegion = ''
-      this.addForm.restrictedAccess = '0'
-      this.addForm.whitelistPrivileges = '1'
+      // this.addForm.regionType = '0'
+      // this.addForm.parentRegion = ''
+      // this.addForm.restrictedAccess = '0'
+      // this.addForm.whitelistPrivileges = '1'
       this.addDialogVisible = false
     },
 
